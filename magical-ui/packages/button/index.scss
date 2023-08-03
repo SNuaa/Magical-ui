@@ -1,0 +1,241 @@
+@import "../../src/styles/global.scss";
+.mzl-button {
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 2px;
+  background: #fff;
+  transition: all 0.15s ease;
+  user-select: none;
+  overflow: hidden;
+  line-height: 1;
+  white-space: nowrap;
+  // i {
+  // }
+  span {
+    display: inline-block;
+  }
+}
+.mzl-button-medium {
+  padding: 8px 18px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 2px;
+  background: #fff;
+  transition: all 0.15s ease;
+  user-select: none;
+  overflow: hidden;
+  line-height: 1;
+  white-space: nowrap;
+  i {
+    font-size: 14px;
+  }
+}
+.mzl-button-small {
+  padding: 7px 13px;
+  outline: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 2px;
+  background: #fff;
+  transition: all 0.15s ease;
+  user-select: none;
+  overflow: hidden;
+  line-height: 1;
+  white-space: nowrap;
+  i {
+    font-size: 13px;
+  }
+}
+.mzl-button-mini {
+  padding: 7px 13px;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 2px;
+  background: #fff;
+  transition: all 0.15s ease;
+  user-select: none;
+  overflow: hidden;
+  line-height: 1;
+  white-space: nowrap;
+  i {
+    font-size: 12px;
+  }
+}
+.mzl-button-round {
+  border-radius: 22px;
+}
+.mzl-button-default {
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  color: #333;
+  &:hover {
+    color: #0e80eb;
+    border-color: #0e80eb;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+.mzl-button-custom {
+  color: #333;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+.mzl-button-primary {
+  border: 1px solid $primary;
+  color: #fff;
+  background-color: $primary;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+.mzl-button-success {
+  border: 1px solid #09b63d;
+  color: #fff;
+  background-color: #09b63d;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+.mzl-button-danger {
+  border: 1px solid #ec3437;
+  background: #ec3437;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    border-color: #ec3437;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+.mzl-button-warning {
+  border: 1px solid #f57b29;
+  background: #f57b29;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    border-color: #f57b29;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+.mzl-button-text {
+  border: 1px solid #fff;
+  background: none;
+  color: #0e80eb;
+  &:hover {
+    color: #0e80eb;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+.mzl-button-dashed {
+  border: 1px dashed #d9d9d9;
+  background: #fff;
+  color: #333;
+  &:hover {
+    color: #0e80eb;
+    border-color: #0e80eb;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+
+.mzl-button-default-disabled {
+  cursor: no-drop;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  opacity: 0.5;
+  color: #333;
+}
+.mzl-button-primary-disabled {
+  cursor: no-drop;
+  border: 1px solid #0e80eb;
+  background: #0e80eb;
+  opacity: 0.5;
+  color: #fff;
+}
+.mzl-button-success-disabled {
+  cursor: no-drop;
+  border: 1px solid #09b63d;
+  background: #09b63d;
+  opacity: 0.5;
+  color: #fff;
+}
+.mzl-button-danger-disabled {
+  cursor: no-drop;
+  border: 1px solid #ec3437;
+  background: #ec3437;
+  opacity: 0.5;
+  color: #fff;
+}
+.mzl-button-warning-disabled {
+  cursor: no-drop;
+  border: 1px solid #f57b29;
+  background: #f57b29;
+  opacity: 0.5;
+  color: #fff;
+}
+.mzl-button-dashed-disabled {
+  cursor: no-drop;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  opacity: 0.5;
+  color: #333;
+}
+.mzl-button-text-disabled {
+  cursor: no-drop;
+  border: 1px solid #fff;
+  background: none;
+  opacity: 0.5;
+  color: #0e80eb;
+}
+.mzl-button-custom-disabled {
+  cursor: no-drop;
+  opacity: 0.5;
+}
+
+.mzl-icon-loading {
+  animation: icon-loading 1.5s linear infinite;
+  -webkit-animation: icon-loading 1.5s linear infinite;
+}
+@keyframes icon-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

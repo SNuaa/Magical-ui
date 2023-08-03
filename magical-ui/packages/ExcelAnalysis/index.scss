@@ -1,0 +1,65 @@
+.box-card {
+    height: 500px;
+    width: 900px;
+    box-sizing: border-box;
+    color: #606266;
+    border-radius: 10px;
+    padding: 10px 20px 20px 20px;
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .uploadBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+
+        .buttonBox {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .buttonBoxLeft {
+                .buttonBoxLeft1 {
+                    margin-right: 20px;
+                }
+            }
+
+            .buttonBoxRight {
+                position: absolute;
+                top: 0;
+                right: 0;
+                align-self: flex-end;
+            }
+        }
+
+        .tip {
+            margin-bottom: 10px;
+        }
+
+        .Box {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 96%;
+            // height: 510px;
+            height: 355px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+
+            .tableBox {
+                max-width: 100%;
+                // width: 1500px;
+                // height: 445px;
+                max-height: 100%;
+            }
+        }
+    }
+
+
+}
